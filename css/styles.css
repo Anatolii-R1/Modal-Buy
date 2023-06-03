@@ -1340,6 +1340,7 @@ img {
   .form-fild {
    font-size: 18px;
   line-height: 1.22; 
+  height: 66px;
   }
 } 
 
@@ -1410,9 +1411,7 @@ img {
   
   pointer-events: none;
 }
-.form-fild:focus + .form-icon {
-  fill: var(--color-iris);
-}
+
 .form-comment {
   font-family: 'Montserrat';
   font-style: normal;
