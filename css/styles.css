@@ -1120,7 +1120,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+ --header-idx: 10;
+  --modal-idx: 100;
 
 
 
