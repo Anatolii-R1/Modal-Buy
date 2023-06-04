@@ -172,7 +172,7 @@ p {
 } */
 
 /* Header styles */
-.header {
+/* .header {
   z-index: var(--header-idx);
   
 
@@ -348,11 +348,11 @@ p {
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
-}
+} */
 
 /* Section-Hero */
 
-.hero-section {
+/* .hero-section {
   max-width: 428px;
   height: 432px;
   margin-left: auto;
@@ -461,7 +461,7 @@ p {
   margin: auto;
   margin-bottom: 48px; 
   }
-} 
+}  */
 
 /* .button {
   display: block;
@@ -1120,7 +1120,7 @@ img {
   max-width: 100%;
   height: auto;
 }
- --header-idx: 10;
+
   --modal-idx: 100;
 
 
@@ -1194,7 +1194,8 @@ img {
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background: linear-gradient (181.96deg, #F16529 1.64%, #D44528 98.35%);
+  background-color:  #FAFAFA;
+  fill: #F16529;
 }
 
 .modal-close-icon {
@@ -1281,6 +1282,26 @@ img {
 }
 .form {
 }
+.form-label-name {
+  display: block;
+  margin-bottom: 8px;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #000000;
+  letter-spacing: -0.02em; 
+}
+@media only screen and (min-width: 768px) {
+  .form-label-name {
+    font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  flex-basis: 264px;
+  }
+} 
 .form-label {
   display: block;
   margin-bottom: 8px;
@@ -1300,13 +1321,25 @@ img {
   letter-spacing: -0.02em;
   }
 } 
+.form-wrapper-name {
+  position: relative;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .form-wrapper-name {
+    display: flex;
+    gap: 21px;
+  }
+} 
 
+.form-wrapper-card,
+.form-wrapper-phone,
 .form-wrapper {
   position: relative;
   margin-bottom: 8px;
 }
 @media only screen and (min-width: 768px) {
-  .form-wrapper {
+  .form-wrapper-card {
     margin-bottom: 18px;
   }
 } 
@@ -1342,6 +1375,7 @@ img {
    font-size: 18px;
   line-height: 1.22; 
   height: 66px;
+  width: 100%;
   }
 } 
 
@@ -1355,7 +1389,7 @@ img {
   width: 100%;
   height: 45px;
   padding: 0;
-  padding-left: 37px;
+  padding-left: 50px;
 
   outline: transparent;
   outline-offset: -1px;
@@ -1367,35 +1401,11 @@ img {
 @media only screen and (min-width: 768px) {
   .from-fild-phone {
    font-size: 18px;
-  line-height: 1.22; 
+   line-height: 1.22; 
+   height: 66px;
   }
 } 
-.form-fild-card {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
 
-  width: 100%;
-  height: 45px;
-  padding: 0;
-  padding-left: 18px;
-
-  outline: transparent;
-  outline-offset: -1px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
-
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media only screen and (min-width: 768px) {
-  .form-fild-card {
-   font-size: 18px;
-  line-height: 1.22; 
-  }
-} 
 .form-icon-phone {
   position: absolute;
   top: 50%;
